@@ -1,0 +1,28 @@
+<aside class="sidebar">
+  <div class="sidebar-box">
+    <h4>Recommended Tools</h4>
+    {% if page.tools %}
+      {% for tool in page.tools %}
+      <div class="aff-item">
+        <div class="aff-thumb"></div>
+        <div><a href="{{ tool.url | default: '#' }}">{{ tool.name }}</a><br>{{ tool.desc }}</div>
+      </div>
+      {% endfor %}
+    {% else %}
+      <div class="aff-item"><div class="aff-thumb"></div><div><a href="#">Pipeline CRM</a><br>Simple pipeline tracking for small teams.</div></div>
+      <div class="aff-item"><div class="aff-thumb"></div><div><a href="#">InboxSync Pro</a><br>Automatic email logging for any CRM.</div></div>
+      <div class="aff-item"><div class="aff-thumb"></div><div><a href="#">QuoteBuilder</a><br>Fast, branded proposals that sync to your deals.</div></div>
+    {% endif %}
+    <p class="disclosure-note" style="margin-top:14px;">Some links above are affiliate links. We may earn a commission at no extra cost to you. <a href="/about.html">Learn more</a>.</p>
+  </div>
+
+  <div class="ad-slot ad-square ad-label">Ad space — 300×250</div>
+
+  <div class="sidebar-box">
+    <h4>Keep Reading</h4>
+    {% assign related = site.posts | where_exp: "post", "post.url != page.url" | limit: 3 %}
+    {% for post in related %}
+    <div class="aff-item"><div><a href="{{ post.url }}">{{ post.title }}</a></div></div>
+    {% endfor %}
+  </div>
+</aside>

@@ -1,0 +1,32 @@
+<svg viewBox="0 0 1200 420" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="420" fill="#0F1B2D"/>
+  <rect width="1200" height="420" fill="url(#g1)"/>
+  <defs>
+    <radialGradient id="g1" cx="50%" cy="45%" r="70%">
+      <stop offset="0%" stop-color="#1E3B6E"/>
+      <stop offset="100%" stop-color="#0F1B2D"/>
+    </radialGradient>
+  </defs>
+  <circle cx="600" cy="210" r="130" fill="none" stroke="#3A5A94" stroke-width="1.5" stroke-dasharray="4 8"/>
+  <g stroke="#5C7FBE" stroke-width="1.5">
+    <line x1="600" y1="210" x2="440" y2="120"/>
+    <line x1="600" y1="210" x2="770" y2="120"/>
+    <line x1="600" y1="210" x2="450" y2="310"/>
+    <line x1="600" y1="210" x2="760" y2="305"/>
+    <line x1="600" y1="210" x2="600" y2="90"/>
+  </g>
+  <circle cx="600" cy="210" r="52" fill="#2557D6"/>
+  <text x="600" y="220" font-family="Sora, sans-serif" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">CRM</text>
+  <g fill="#1B2C47" stroke="#3A5A94">
+    <circle cx="440" cy="120" r="24"/><circle cx="770" cy="120" r="24"/>
+    <circle cx="450" cy="310" r="24"/><circle cx="760" cy="305" r="24"/>
+    <circle cx="600" cy="90" r="24"/>
+  </g>
+  <g fill="#8EA9DE">
+    <circle cx="440" cy="112" r="7"/><rect x="428" y="123" width="24" height="11" rx="5"/>
+    <circle cx="770" cy="112" r="7"/><rect x="758" y="123" width="24" height="11" rx="5"/>
+    <circle cx="450" cy="302" r="7"/><rect x="438" y="313" width="24" height="11" rx="5"/>
+    <circle cx="760" cy="297" r="7"/><rect x="748" y="308" width="24" height="11" rx="5"/>
+    <circle cx="600" cy="82" r="7"/><rect x="588" y="93" width="24" height="11" rx="5"/>
+  </g>
+</svg>

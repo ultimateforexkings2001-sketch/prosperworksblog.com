@@ -1,0 +1,22 @@
+<header class="site-header">
+  <div class="wrap nav-row">
+    <a href="/" class="brand">
+      <img src="/images/logo.svg" alt="{{ site.title }} logo" width="44" height="44">
+      <span class="brand-text">
+        <span class="brand-name">{{ site.title }}</span><br>
+        <span class="brand-tag">CRM • Sales • Marketing • Business Growth</span>
+      </span>
+    </a>
+    <nav class="main-nav">
+      <a href="/"{% if page.url == '/' %} class="active"{% endif %}>Home</a>
+      <a href="/#featured">Blog</a>
+      <a href="/#categories">Categories</a>
+      <a href="/about.html"{% if page.url == '/about.html' %} class="active"{% endif %}>About</a>
+      <a href="/contact.html"{% if page.url == '/contact.html' %} class="active"{% endif %}>Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" aria-label="Search">🔍</button>
+      <a href="/#subscribe" class="btn btn-primary">Subscribe</a>
+    </div>
+  </div>
+</header>

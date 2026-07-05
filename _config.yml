@@ -1,0 +1,20 @@
+title: GrowthDesk
+description: "Practical guides, expert insights, and proven strategies on CRM, sales, marketing, and business growth."
+url: "https://prosperworksblog.com"
+
+markdown: kramdown
+
+plugins:
+  - jekyll-sitemap
+
+permalink: /articles/:title.html
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+exclude:
+  - README.md

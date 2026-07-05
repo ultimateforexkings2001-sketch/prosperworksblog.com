@@ -1,0 +1,32 @@
+<svg viewBox="0 0 1200 420" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="420" fill="#F5F8FF"/>
+  <circle cx="600" cy="210" r="70" fill="#2557D6"/>
+  <text x="600" y="220" font-family="Sora, sans-serif" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">CRM</text>
+  <g stroke="#C6D3EC" stroke-width="2.5">
+    <line x1="600" y1="210" x2="340" y2="110"/>
+    <line x1="600" y1="210" x2="860" y2="110"/>
+    <line x1="600" y1="210" x2="340" y2="310"/>
+    <line x1="600" y1="210" x2="860" y2="310"/>
+  </g>
+  <g>
+    <circle cx="340" cy="110" r="34" fill="#ffffff" stroke="#E3E8F0"/>
+    <rect x="322" y="94" width="36" height="27" rx="3" fill="#EA4335"/>
+    <polygon points="322,94 340,110 358,94" fill="#ffffff"/>
+
+    <circle cx="860" cy="110" r="34" fill="#ffffff" stroke="#E3E8F0"/>
+    <rect x="844" y="93" width="32" height="34" rx="3" fill="#4285F4"/>
+    <rect x="850" y="101" width="20" height="3" fill="#ffffff"/>
+    <rect x="850" y="109" width="20" height="3" fill="#ffffff"/>
+    <rect x="850" y="117" width="12" height="3" fill="#ffffff"/>
+
+    <circle cx="340" cy="310" r="34" fill="#ffffff" stroke="#E3E8F0"/>
+    <rect x="325" y="292" width="30" height="34" rx="3" fill="#0F9D58"/>
+    <rect x="330" y="300" width="20" height="3" fill="#ffffff"/>
+    <rect x="330" y="308" width="20" height="3" fill="#ffffff"/>
+    <rect x="330" y="316" width="14" height="3" fill="#ffffff"/>
+
+    <circle cx="860" cy="310" r="34" fill="#ffffff" stroke="#E3E8F0"/>
+    <rect x="844" y="292" width="32" height="34" rx="3" fill="#FBBC05"/>
+    <polygon points="844,292 860,310 876,292" fill="#ffffff" opacity="0.5"/>
+  </g>
+</svg>

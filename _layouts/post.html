@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<div class="wrap" style="padding-top:32px;">
+  <div class="article-hero-img"><img src="{{ page.hero_image | default: '/images/hero-dashboard.svg' }}" alt="{{ page.title }}"></div>
+  <span class="tag {{ page.category }}">{{ page.category | capitalize }}</span>
+  <h1 class="article-title">{{ page.title }}</h1>
+  <div class="article-meta-row">
+    <span>By {{ page.author | default: "GrowthDesk Team" }}</span><span>·</span>
+    <span>{{ page.date | date: "%b %-d, %Y" }}</span><span>·</span>
+    <span>{{ page.read_time | default: "6 min read" }}</span>
+  </div>
+</div>
+
+<section class="section" style="padding-top:24px;">
+  <div class="wrap content-grid">
+    <article class="article-body">
+      {{ content }}
+
+      <div class="author-box">
+        <div class="author-avatar">{{ page.author_initials | default: "GD" }}</div>
+        <div>
+          <strong>{{ page.author | default: "GrowthDesk Team" }}</strong><br>
+          <span style="color:#5B6B7C; font-size:14px;">{{ page.author_bio | default: "Contributor at GrowthDesk." }}</span>
+        </div>
+      </div>
+    </article>
+
+    {% include sidebar.html %}
+  </div>
+</section>
