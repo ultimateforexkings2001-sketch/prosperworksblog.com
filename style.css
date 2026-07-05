@@ -24,6 +24,34 @@ padding:120px 20px;
 text-align:center;
 }
 
+.stats{
+background:#eaf2ff;
+}
+
+.stats h2{
+font-size:48px;
+color:#2563eb;
+margin-bottom:10px;
+}
+
+footer a{
+color:white;
+text-decoration:none;
+margin:0 8px;
+}
+
+footer a:hover{
+color:#60a5fa;
+}
+
+h2{
+margin-bottom:20px;
+}
+
+.card p{
+margin-bottom:15px;
+}
+
 .hero h1{
 font-size:60px;
 margin-bottom:20px;
