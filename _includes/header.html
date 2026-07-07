@@ -9,8 +9,8 @@
     </a>
     <nav class="main-nav">
       <a href="/"{% if page.url == '/' %} class="active"{% endif %}>Home</a>
-      <a href="/#featured">Blog</a>
-      <a href="/#categories">Categories</a>
+      <a href="/blog.html"{% if page.url == '/blog.html' %} class="active"{% endif %}>Blog</a>
+      <a href="/categories.html"{% if page.url contains '/categories' %} class="active"{% endif %}>Categories</a>
       <a href="/about.html"{% if page.url == '/about.html' %} class="active"{% endif %}>About</a>
       <a href="/contact.html"{% if page.url == '/contact.html' %} class="active"{% endif %}>Contact</a>
     </nav>
