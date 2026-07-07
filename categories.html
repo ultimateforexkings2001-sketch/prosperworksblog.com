@@ -1,0 +1,47 @@
+---
+layout: default
+title: Categories
+excerpt: "Browse GrowthDesk articles by category — CRM, Sales, and Marketing."
+permalink: /categories.html
+---
+<section class="section">
+  <div class="wrap" style="max-width:900px;">
+    <span class="eyebrow">Browse by Topic</span>
+    <h1 style="font-size:38px; margin-bottom:16px;">Categories</h1>
+    <p style="color:#5B6B7C; font-size:16px; margin-bottom:40px;">We organize everything into three practical areas. Pick the one that matches what you're working on right now.</p>
+
+    <div style="display:grid; gap:24px;">
+
+      <a href="/categories/crm.html" style="display:block; border:1px solid #E3E8F0; border-radius:12px; padding:28px; transition: box-shadow .15s;">
+        <span class="tag crm">CRM</span>
+        <h2 style="font-size:22px; margin-top:12px; margin-bottom:8px;">CRM</h2>
+        <p style="color:#5B6B7C; font-size:15px; margin-bottom:0;">What CRM software actually does, how to choose one, and how to get it genuinely integrated into how your team already works — Gmail, Calendar, Drive, and beyond.</p>
+        <span style="color:#2557D6; font-weight:700; font-size:14px; display:inline-block; margin-top:14px;">
+          {% assign crm_count = site.posts | where: "category", "crm" | size %}
+          View {{ crm_count }} article{% if crm_count != 1 %}s{% endif %} →
+        </span>
+      </a>
+
+      <a href="/categories/sales.html" style="display:block; border:1px solid #E3E8F0; border-radius:12px; padding:28px;">
+        <span class="tag sales">Sales</span>
+        <h2 style="font-size:22px; margin-top:12px; margin-bottom:8px;">Sales</h2>
+        <p style="color:#5B6B7C; font-size:15px; margin-bottom:0;">Pipeline structure, forecasting, reporting, and the day-to-day mechanics of running a sales process that actually converts.</p>
+        <span style="color:#2557D6; font-weight:700; font-size:14px; display:inline-block; margin-top:14px;">
+          {% assign sales_count = site.posts | where: "category", "sales" | size %}
+          View {{ sales_count }} article{% if sales_count != 1 %}s{% endif %} →
+        </span>
+      </a>
+
+      <a href="/categories/marketing.html" style="display:block; border:1px solid #E3E8F0; border-radius:12px; padding:28px;">
+        <span class="tag marketing">Marketing</span>
+        <h2 style="font-size:22px; margin-top:12px; margin-bottom:8px;">Marketing</h2>
+        <p style="color:#5B6B7C; font-size:15px; margin-bottom:0;">Email, content, and demand generation tactics that hold up in practice, not just in a case study screenshot.</p>
+        <span style="color:#2557D6; font-weight:700; font-size:14px; display:inline-block; margin-top:14px;">
+          {% assign marketing_count = site.posts | where: "category", "marketing" | size %}
+          View {{ marketing_count }} article{% if marketing_count != 1 %}s{% endif %} →
+        </span>
+      </a>
+
+    </div>
+  </div>
+</section>

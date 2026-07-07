@@ -1,0 +1,29 @@
+---
+layout: default
+title: Blog
+excerpt: "Every GrowthDesk guide on CRM, sales, marketing, and business growth — all in one place."
+permalink: /blog.html
+---
+<section class="section">
+  <div class="wrap">
+    <div class="section-head" style="display:block;">
+      <span class="eyebrow">The GrowthDesk Blog</span>
+      <h2 style="margin-top:6px;">All Articles</h2>
+      <p style="color:#5B6B7C; font-size:16px; max-width:640px; margin-top:10px;">Practical, no-fluff guides on CRM, sales, and marketing — written for people who actually run pipelines, not people who write about them. Browse everything below, or jump into a specific <a href="/categories.html" style="color:#2557D6; font-weight:600;">category</a>.</p>
+    </div>
+
+    <div class="card-grid">
+      {% for post in site.posts %}
+      <a class="card" href="{{ post.url }}">
+        <img class="card-thumb" src="{{ post.thumb_image | default: '/images/hero-dashboard.svg' }}" alt="{{ post.title }}">
+        <div class="card-body">
+          <span class="tag {{ post.category }}">{{ post.category | capitalize }}</span>
+          <h3>{{ post.title }}</h3>
+          <p class="excerpt">{{ post.excerpt | default: post.content | strip_html | truncate: 110 }}</p>
+          <div class="meta"><span>{{ post.date | date: "%b %-d, %Y" }}</span><span class="dot"></span><span>{{ post.read_time | default: "6 min read" }}</span></div>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
