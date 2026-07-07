@@ -29,7 +29,7 @@ permalink: /
   <div class="wrap">
     <div class="section-head">
       <h2>Featured Articles</h2>
-      <a href="#featured" class="view-all">View all articles →</a>
+      <a href="/blog.html" class="view-all">View all articles →</a>
     </div>
     <div class="card-grid">
       {% for post in site.posts %}
@@ -50,13 +50,13 @@ permalink: /
 <section class="categories-strip" id="categories">
   <div class="wrap">
     <div class="cat-pills">
-      <a href="#featured">CRM</a>
-      <a href="#featured">Sales</a>
-      <a href="#featured">Marketing</a>
-      <a href="#featured">Customer Success</a>
-      <a href="#featured">Automation</a>
-      <a href="#featured">Business Growth</a>
-      <a href="#featured">Tools & Reviews</a>
+      <a href="/categories/crm.html">CRM</a>
+      <a href="/categories/sales.html">Sales</a>
+      <a href="/categories/marketing.html">Marketing</a>
+      <a href="/categories.html">Customer Success</a>
+      <a href="/categories.html">Automation</a>
+      <a href="/categories.html">Business Growth</a>
+      <a href="/categories.html">Tools & Reviews</a>
     </div>
   </div>
 </section>
@@ -68,8 +68,12 @@ permalink: /
         <h2>Get growth tips in your inbox</h2>
         <p>One practical email a week — no fluff. Join readers building better sales and marketing systems.</p>
       </div>
-      <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thanks for subscribing!');">
-        <input type="email" placeholder="you@company.com" required aria-label="Email address">
+      <form action="https://buttondown.com/api/emails/embed-subscribe/YOUR-BUTTONDOWN-USERNAME"
+            method="post" target="popupwindow"
+            onsubmit="window.open('https://buttondown.com/YOUR-BUTTONDOWN-USERNAME', 'popupwindow')"
+            class="newsletter-form">
+        <input type="email" name="email" placeholder="you@company.com" required aria-label="Email address">
+        <input type="hidden" value="1" name="embed">
         <button type="submit" class="btn btn-primary">Subscribe</button>
       </form>
     </div>
