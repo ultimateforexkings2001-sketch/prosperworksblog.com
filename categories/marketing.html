@@ -1,0 +1,28 @@
+---
+layout: default
+title: Marketing Articles
+excerpt: "Guides on email, content, and demand generation tactics that hold up in practice."
+permalink: /categories/marketing.html
+---
+<section class="section">
+  <div class="wrap">
+    <span class="eyebrow"><a href="/categories.html" style="color:#2557D6;">← All Categories</a></span>
+    <h1 style="font-size:36px; margin:14px 0 12px;">Marketing</h1>
+    <p style="color:#5B6B7C; font-size:16px; max-width:640px; margin-bottom:36px;">Email, content, and demand generation tactics that hold up in practice, not just in a case study screenshot.</p>
+
+    <div class="card-grid">
+      {% assign marketing_posts = site.posts | where: "category", "marketing" %}
+      {% for post in marketing_posts %}
+      <a class="card" href="{{ post.url }}">
+        <img class="card-thumb" src="{{ post.thumb_image | default: '/images/hero-dashboard.svg' }}" alt="{{ post.title }}">
+        <div class="card-body">
+          <span class="tag marketing">Marketing</span>
+          <h3>{{ post.title }}</h3>
+          <p class="excerpt">{{ post.excerpt | default: post.content | strip_html | truncate: 110 }}</p>
+          <div class="meta"><span>{{ post.date | date: "%b %-d, %Y" }}</span><span class="dot"></span><span>{{ post.read_time | default: "6 min read" }}</span></div>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
