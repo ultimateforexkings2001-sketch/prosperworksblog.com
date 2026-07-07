@@ -1,0 +1,28 @@
+---
+layout: default
+title: Sales Articles
+excerpt: "Guides on pipeline structure, forecasting, and running a sales process that converts."
+permalink: /categories/sales.html
+---
+<section class="section">
+  <div class="wrap">
+    <span class="eyebrow"><a href="/categories.html" style="color:#2557D6;">← All Categories</a></span>
+    <h1 style="font-size:36px; margin:14px 0 12px;">Sales</h1>
+    <p style="color:#5B6B7C; font-size:16px; max-width:640px; margin-bottom:36px;">Pipeline structure, forecasting, reporting, and the day-to-day mechanics of running a sales process that actually converts — built around how buyers really decide, not generic templates.</p>
+
+    <div class="card-grid">
+      {% assign sales_posts = site.posts | where: "category", "sales" %}
+      {% for post in sales_posts %}
+      <a class="card" href="{{ post.url }}">
+        <img class="card-thumb" src="{{ post.thumb_image | default: '/images/hero-dashboard.svg' }}" alt="{{ post.title }}">
+        <div class="card-body">
+          <span class="tag sales">Sales</span>
+          <h3>{{ post.title }}</h3>
+          <p class="excerpt">{{ post.excerpt | default: post.content | strip_html | truncate: 110 }}</p>
+          <div class="meta"><span>{{ post.date | date: "%b %-d, %Y" }}</span><span class="dot"></span><span>{{ post.read_time | default: "6 min read" }}</span></div>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
